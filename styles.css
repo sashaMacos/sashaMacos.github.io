@@ -1,3 +1,7 @@
+html, body {
+    overflow: hidden;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -92,19 +96,42 @@ body {
     transform: scale(1.05);
 }
 
+
 @media (max-width: 500px) {
+    .logo-img {
+        display: none;
+    }
+
+    .logo-text {
+        position: relative;
+        top: -40px;
+        font-size: 70px;
+        color: white;
+        margin-bottom: 50px;
+    }
+
     .search-container {
-        width: 80%; 
+        position: relative;
+        top: -60px;
+        align-items: center;
+        justify-content: center;
+        width: 90%; 
         max-width: none;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .search-input {
-        padding: 1px;
+        position: relative;
+        left: 5px;
+        border-radius: 100px 0px 0px 100px;
+        padding: 20px;
         font-size: 18px;
     }
 
     .search-button {
+        position: relative;
+        right: 5px;
+        border-radius: 0px 100px 100px 0px;
         padding: 20px 25px;
     }
     
