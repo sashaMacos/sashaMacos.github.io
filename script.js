@@ -1,3 +1,5 @@
+const engine = document.getElementById("engine")
+
 function urlsearch(event) {
     event.preventDefault();
     const query = document.getElementById("search-query").value;
@@ -15,8 +17,32 @@ function searchtext(event) {
     if (query.trim() === "") {
         return false;
     }
-const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-//const searchUrlYa = `https://ya.ru/search/?text=${encodeURIComponent(query)}&lr=25&search_source=yaru_desktop_common&search_domain=yaru`;//
-//window.open(searchUrlYa, "_blank");//
-window.location.href = searchUrl;
+
+    const enginevaule = engine.value;
+    if (enginevaule === "Google") {
+        let searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+    }
+    if (enginevaule === "Yandex") {
+        let searchUrl = `https://ya.ru/search/?text=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+    }
+    if (enginevaule === "DuckDuckGo") {
+        let searchUrl = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+    }
+    if (enginevaule === "Bing") {
+        let searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+    }   
+    if (enginevaule === "All") {
+        let searchUrlGoogle = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        let searchUrlYa = `https://ya.ru/search/?text=${encodeURIComponent(query)}`;
+        let searchUrlDuck = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(query)}`;
+        let searchUrlBing = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+        window.open(searchUrlGoogle, "_blank")
+        window.open(searchUrlYa, "_blank")
+        window.open(searchUrlDuck, "_blank")
+        window.open(searchUrlBing, "_blank")
+    }   
 }

@@ -14,6 +14,28 @@ body {
     position: relative;
 }
 
+@font-face {
+    font-family: "YandexSansDisplay-Bold";
+    src: url("/Fonts/YandexSansDisplay.woff2") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+select {
+    appearance: auto;
+    -webkit-appearance: none;
+    display: block;
+    width: 20%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
 .top-left-logo {
     position: absolute;
     top: 20px;
@@ -96,18 +118,31 @@ body {
     transform: scale(1.05);
 }
 
-
 @media (max-width: 500px) {
+    select {
+        appearance: auto;
+        -webkit-appearance: none;
+        display: block;
+        width: 30%;
+        margin: 70px 0;
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    
     .logo-img {
         display: none;
     }
 
     .logo-text {
         position: relative;
-        top: -40px;
+
         font-size: 70px;
         color: white;
-        margin-bottom: 50px;
     }
 
     .search-container {

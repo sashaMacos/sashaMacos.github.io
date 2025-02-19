@@ -6,7 +6,7 @@
     <title>Юндекс — быстрый поиск в интернете</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="logo.png" type="image/x-icon">
-    <link href="https://yastatic.net/s3/frontend-fonts/YaDisplay/YandexSansDisplay-Bold.woff2" rel="stylesheet">
+    <link href="https://yastatic.net/s3/frontend-fonts/YaDisplay/YandexSansDisplay-Bold.woff2" rel="woff2">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-toutch-icon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -22,11 +22,20 @@
         </a>
     </div>
 
+
     <div class="logo-text">
         <a title="Юндекс — быстрый поиск в интернете">
             <span class="red-letter">Ю</span>ндекс
         </a>
     </div>
+
+    <select id="engine">
+        <option value="Google">Google</option>
+        <option value="Yandex">Yandex</option>
+        <option value="DuckDuckGo">DuckDuckGo</option>
+        <option value="Bing">Microsoft Bing</option>
+        <option value="All">Все 4 поиска</option>
+    </select>
 
     <div class="search-container">
         <form onsubmit="return urlsearch(event);">
