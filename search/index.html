@@ -41,7 +41,7 @@
     const google = document.getElementById("google");
     const urlParams = new URLSearchParams(window.location.search);
     const q = urlParams.get('q');
-    if (query === "The cutest witch ever"){
+    if (q === "The cutest witch ever"){
         document.title = `${q} - Юндекс: нашлось ${count}`;
         result.textContent = "Конечно же Эмити Блайт!"
         const img = document.createElement("img");
