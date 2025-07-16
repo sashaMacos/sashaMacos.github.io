@@ -18,24 +18,27 @@ function searchtext(event) {
         return false;
     }
 
-    const enginevaule = engine.value;
-    if (enginevaule === "Google") {
+    if (engine.value === "Google") {
         let searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
     }
-    if (enginevaule === "Yandex") {
+    if (engine.value === "Yandex") {
         let searchUrl = `https://ya.ru/search/?text=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
     }
-    if (enginevaule === "DuckDuckGo") {
+    if (engine.value === "DuckDuckGo") {
         let searchUrl = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
     }
-    if (enginevaule === "Bing") {
+    if (engine.value === "Bing") {
         let searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
-    }   
-    if (enginevaule === "All") {
+    }
+    if (engine.value === "Undex") {
+        let searchUrl = `https://undex.kuzymuzy.ru/search?q=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+    }
+    if (engine.value === "All") {
         let searchUrlGoogle = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
         let searchUrlYa = `https://ya.ru/search/?text=${encodeURIComponent(query)}`;
         let searchUrlDuck = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(query)}`;
