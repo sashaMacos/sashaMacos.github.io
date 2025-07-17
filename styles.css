@@ -118,6 +118,75 @@ select {
     transform: scale(1.05);
 }
 
+.yandex-ad {
+    position: static;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 150px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.ad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ad-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #555;
+}
+
+.ad-close-btn {
+    align-items: center;
+    background-color: #3b82f6; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.ad-close-btn:hover {
+    background-color: #2563eb; 
+}
+
+.yandex-ad a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ad-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.ad-text {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
 @media (max-width: 500px) {
     select {
         appearance: auto;
@@ -132,6 +201,12 @@ select {
         background-color: rgba(255, 255, 255, 0.2);
         color: #ffffff;
         transition: all 0.3s ease;
+    }
+
+    .yandex-ad {
+        position: static;
+        margin: 10px auto;
+        max-width: 90%;
     }
     
     .logo-img {

@@ -31,11 +31,11 @@
 
     <select id="engine">
         <option value="Google">Google</option>
+        <option value="Undex">Undex (recomended)</option>
         <option value="Yandex">Yandex</option>
-        <option value="Undex">Undex</option>
         <option value="DuckDuckGo">DuckDuckGo</option>
         <option value="Bing">Microsoft Bing</option>
-        <option value="All">Все 4 поиска</option>
+        <option value="All">Все 5 поиска</option>
     </select>
 
     <div class="search-container">
@@ -43,6 +43,20 @@
             <input type="text" class="search-input" name="q" id="search-query" placeholder="потеряем все!">
             <button type="submit" class="search-button">Найти</button>
         </form>
+    </div>
+
+    <div class="yandex-ad" id="yandexAd">
+        <div class="ad-header">
+            <span class="ad-label">Реклама</span>
+            <button class="ad-close-btn" aria-label="Закрыть рекламу" onclick="document.getElementById('yandexAd').style.display='none'">×</button>
+        </div>
+        <a href="https://kuzymuzy.ru/KuzyCoin/login" target="_blank">
+            <img src="https://kuzymuzy.ru/favicon.ico" alt="Реклама" class="ad-img">
+            <div class="ad-text">
+                <strong>KuzyCoin</strong><br>
+                Игра как в хомяка но лучше, тут тебя 100% наебут.
+            </div>
+        </a>
     </div>
 
 <script src="script.js"></script>
