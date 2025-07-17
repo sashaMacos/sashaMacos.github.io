@@ -16,7 +16,7 @@ body {
 
 @font-face {
     font-family: "YandexSansDisplay-Bold";
-    src: url("/Fonts/YandexSansDisplay.woff2") format("truetype");
+    src: url("/assets/fonts/YandexSansDisplay.woff2") format("truetype");
     font-style: normal; 
     font-weight: normal; 
 }
