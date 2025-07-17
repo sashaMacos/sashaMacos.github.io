@@ -35,7 +35,7 @@ function searchtext(event) {
         window.location.href = searchUrl;
     }
     if (engine.value === "Undex") {
-        let searchUrl = `https://undex.kuzymuzy.ru/search?q=${encodeURIComponent(query)}`;
+        let searchUrl = `/search/?q=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
     }
     if (engine.value === "All") {
